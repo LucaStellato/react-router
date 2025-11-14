@@ -15,6 +15,7 @@ export default function Prodotti() {
     }
     return (
         <>
+            <h2>ECCO I PRODOTTI DI BOOLIFY</h2>
             <div className="row">
                 {products.map((product) => (
                     <div className="card  m-3 H-100" style={{ width: "18rem" }}>
