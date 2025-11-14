@@ -1,3 +1,4 @@
+import jmb from '../assets/jmb.png'
 export default function HomePageLayout() {
     return (
         <>
