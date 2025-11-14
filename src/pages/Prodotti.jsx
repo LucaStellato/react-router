@@ -6,9 +6,10 @@ import axios from 'axios'
 
 export default function Prodotti() {
     const [products, setProducts] = useState([]);
+    const endpoint = 'https://fakestoreapi.com/products)'
+    useEffect(fetchProducts, [])
     function fetchProducts() {
-        axios.get('https://fakestoreapi.com/products)')
-            .then((res) => setTodos(res.data))
+        axios.get(endpoint).then((res) => setProducts(res.data))
     }
     return (
         <>
