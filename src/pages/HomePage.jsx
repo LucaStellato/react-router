@@ -25,11 +25,10 @@ export default function HomePageLayout() {
                     </div>
                 </nav>
             </header>
-            <main>
-                <h2 className="text-center mt-3">Benvenuti nello store officiale di boolean</h2>
+            <main className='' style={{}}>
                 <div className='d-flex mt-4'>
                     <img src={jmb}></img>
-                    <h2>Scegli ció che fa per te dal menú di navigazione</h2>
+                    <h2 style={{ color: '#802c6e', marginTop: '100px' }}>Scegli ció che fa per te dal menú di navigazione</h2>
 
                 </div>
             </main>
