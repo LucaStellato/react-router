@@ -15,16 +15,16 @@ export default function Prodotti() {
     }
     return (
         <>
-            <h2>ECCO I PRODOTTI DI BOOLIFY</h2>
-            <div className="row">
+            <h2 style={{ textAlign: 'center', color: '#802c6e' }}>ECCO I PRODOTTI DI BOOLIFY</h2>
+            <div className="row " style={{ width: 'auto', marginTop: '20px', marginBottom: '20px' }}>
                 {products.map((product) => (
-                    <div className="card  m-3 H-100" style={{ width: "18rem" }}>
+                    <div className="card  m-3 H-100 border border-0" style={{ width: "18rem" }}>
                         <img src={product.image} className="card-img-top" />
                         <div className="card-body">
                             <h5 className="card-title">{product.title}</h5>
                             <p classNAme="card-text">{product.description}</p>
-                            <h6>{product.price}</h6>
-                            <a href="#" class="btn btn-primary">Dettagli</a>
+                            <h5>{product.price}€</h5>
+                            <a href="#" class="btn" style={{ backgroundColor: '#802c6e', color: 'white' }}>Dettagli</a>
                         </div>
                     </div>
 
