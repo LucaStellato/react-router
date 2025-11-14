@@ -17,7 +17,7 @@ export default function Prodotti() {
         <>
             <div className="row">
                 {products.map((product) => (
-                    <div className="card " style={{ width: "18rem" }}>
+                    <div className="card  m-3 H-100" style={{ width: "18rem" }}>
                         <img src={product.image} className="card-img-top" />
                         <div className="card-body">
                             <h5 className="card-title">{product.title}</h5>
