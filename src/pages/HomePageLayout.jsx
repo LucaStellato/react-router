@@ -27,6 +27,9 @@ export default function HomePageLayout() {
             </header>
             <main>
                 <h2 className="text-center mt-3">Benvenuti nello store officiale di boolean</h2>
+                <div>
+                    <img src={jmb}></img>
+                </div>
             </main>
         </>
     )
