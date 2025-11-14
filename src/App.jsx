@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import HomePageLayout from './pages/HomePageLayout'
+import HomePage from './pages/HomePage'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePageLayout />}></Route>
+          <Route path='/' element={<HomePage />}></Route>
         </Routes>
       </BrowserRouter>
     </>

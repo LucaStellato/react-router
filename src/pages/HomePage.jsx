@@ -27,8 +27,10 @@ export default function HomePageLayout() {
             </header>
             <main>
                 <h2 className="text-center mt-3">Benvenuti nello store officiale di boolean</h2>
-                <div>
+                <div className='d-flex mt-4'>
                     <img src={jmb}></img>
+                    <h2>Scegli ció che fa per te dal menú di navigazione</h2>
+
                 </div>
             </main>
         </>
