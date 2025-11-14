@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/HomePage'
+import ChiSiamo from './pages/ChiSiamo'
 import DefaultLayout from './pages/DefaultLayout'
 
 
@@ -15,6 +16,8 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<HomePage />}></Route>
+            <Route path='/ChiSiamo' element={<ChiSiamo />}></Route>
+
           </Route>
         </Routes>
       </BrowserRouter>
