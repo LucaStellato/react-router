@@ -16,15 +16,15 @@ export default function Prodotti() {
     return (
         <>
             <h2 style={{ textAlign: 'center', color: '#802c6e' }}>ECCO I PRODOTTI DI BOOLIFY</h2>
-            <div className="row " style={{ width: 'auto', marginTop: '20px', marginBottom: '20px' }}>
+            <div className="row row-cols-1 row-cols-md-4 g-4 " style={{ width: 'auto', marginTop: '20px', marginBottom: '20px' }}>
                 {products.map((product) => (
-                    <div className="card  m-3 H-100 border border-0" style={{ width: "18rem" }}>
-                        <img src={product.image} className="card-img-top" />
-                        <div className="card-body">
+                    <div className="card  m-3 h-100" style={{ width: "18rem", border: '0' }}>
+                        <img src={product.image} className="card-img-top" style={{ width: '200px' }} />
+                        <div className="card-body d-flex flex-column">
                             <h5 className="card-title">{product.title}</h5>
-                            <p classNAme="card-text">{product.description}</p>
+
                             <h5>{product.price}€</h5>
-                            <a href="#" class="btn" style={{ backgroundColor: '#802c6e', color: 'white' }}>Dettagli</a>
+                            <a href="#" class="btn mt-auto" style={{ backgroundColor: '#802c6e', color: 'white' }}>Dettagli</a>
                         </div>
                     </div>
 
