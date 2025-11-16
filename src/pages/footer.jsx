@@ -1,5 +1,4 @@
 
-
 export default function Footer() {
     return (
         <>        <footer style={{ backgroundColor: '#fff8f9', minHeight: '100px' }}>
