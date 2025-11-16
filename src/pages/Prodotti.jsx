@@ -15,7 +15,7 @@ export default function Prodotti() {
     }
     return (
         <>
-            <h2 style={{ textAlign: 'center', color: '#802c6e' }}>ECCO I PRODOTTI DI BOOLIFY</h2>
+            <h2 style={{ textAlign: 'center', color: '#802c6e', marginTop: '20px', marginBottom: '30px' }}>ECCO I NOSTRI PRODOTTI</h2>
             <div className="row  " style={{ width: 'auto', marginTop: '20px', marginBottom: '20px', display: 'flex', marginLeft: '80px' }}>
                 {products.map((product) => (
                     <div className="card  m-3 " style={{ width: "18rem", border: '0' }}>
