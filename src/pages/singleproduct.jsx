@@ -18,7 +18,15 @@ export default function singleProduct() {
     useEffect(fetchData, [])
     return (
         <>
-            <img src={product?.image} alt='' />
+            <div className="d-flex">
+                <img src={product?.image} alt='' style={{ width: '360px', marginLeft: '50px', paddingBottom: '180px', marginTop: '40px' }} />
+                <div style={{ marginLeft: '50px', marginTop: '70px' }}>
+                    <h4 style={{ color: '#802c6e' }}>{product?.title}</h4>
+                    <p style={{ fontSize: '20px' }}>{product?.description}</p>
+                    <p style={{ fontSize: '30px' }}>{product?.price}€</p>
+                </div>
+
+            </div>
         </>
     )
 }
