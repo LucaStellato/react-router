@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage'
 import ChiSiamo from './pages/ChiSiamo'
 import DefaultLayout from './pages/DefaultLayout'
 import Prodotti from './pages/prodotti'
-import singleProduct from './pages/singleproduct'
+import SingleProduct from './pages/SingleProduct'
 
 
 
@@ -20,7 +20,7 @@ function App() {
             <Route path='/' element={<HomePage />}></Route>
             <Route path='/ChiSiamo' element={<ChiSiamo />}></Route>
             <Route path='/Prodotti' element={<Prodotti />}></Route>
-            <Route path='/Prodotti/:id' element={<singleProduct />}></Route>
+            <Route path='/Prodotti/:id' element={<SingleProduct />}></Route>
 
           </Route>
         </Routes>
