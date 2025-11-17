@@ -20,7 +20,7 @@ export default function Prodotti() {
             <div className="row  " style={{ width: 'auto', marginTop: '20px', marginBottom: '20px', display: 'flex', marginLeft: '80px' }}>
                 {products.map((product) => (
                     <div className="card  m-3 " style={{ width: "18rem", border: '0' }}>
-                        <img src={product.image} className="card-img-top" style={{ width: '200px', objectFit: 'contain' }} />
+                        <img src={product.image} className="card-img-top" style={{ width: '200px', objectFit: 'cover' }} />
                         <div className="card-body d-flex flex-column">
                             <h5 className="card-title">{product.title}</h5>
 
