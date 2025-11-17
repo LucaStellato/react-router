@@ -14,9 +14,11 @@ export default function singleProduct() {
                 console.log(response)
                 setProduct(response.data)
 
-            })catch (err => {
-
-        })
+            }).catch(err => {
+                if (err.response === 404) {
+                    navigate(-1)
+                }
+            })
 
     }
     useEffect(fetchData, [])
