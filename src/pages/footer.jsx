@@ -7,11 +7,11 @@ export default function Footer() {
                 <div className="d-flex justify-content-center" style={{
                     color: '#802c6e'
                 }}>
-                    <i class="bi bi-envelope me-3"></i>
-                    <i class="bi bi-facebook me-3"></i>
-                    <i class="bi bi-twitter-x me-3"></i>
-                    <i class="bi bi-instagram me-3"></i>
-                    <i class="bi bi-telephone me-3"></i>
+                    <i className="bi bi-envelope me-3"></i>
+                    <i className="bi bi-facebook me-3"></i>
+                    <i className="bi bi-twitter-x me-3"></i>
+                    <i className="bi bi-instagram me-3"></i>
+                    <i className="bi bi-telephone me-3"></i>
                 </div>
             </div>
 

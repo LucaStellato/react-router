@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import axios from 'axios'
 
 
@@ -24,7 +25,7 @@ export default function Prodotti() {
                             <h5 className="card-title">{product.title}</h5>
 
                             <h5>{product.price}€</h5>
-                            <a href="#" class="btn mt-auto" style={{ backgroundColor: '#802c6e', color: 'white' }}>Dettagli</a>
+                            <Link to={`/products/${product.id}`} class="btn mt-auto" style={{ backgroundColor: '#802c6e', color: 'white' }}>Dettagli </Link>
                         </div>
                     </div>
 

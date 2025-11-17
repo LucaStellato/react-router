@@ -15,6 +15,7 @@ export default function singleProduct() {
     }
     return (
         <>
+            <h1>CIAO</h1>
         </>
     )
 }
