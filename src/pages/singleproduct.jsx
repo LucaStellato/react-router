@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 
 
 export default function singleProduct() {
+    const { id } = useParams();
+    const [product, setProduct] = useState({})
     return (
         <>
         </>
