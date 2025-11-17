@@ -12,11 +12,12 @@ export default function singleProduct() {
                 console.log(response)
                 setProduct(response.data)
             })
-        useEffect(fetchData, [])
+
     }
+    useEffect(fetchData, [])
     return (
         <>
-            <h1>CIAO</h1>
+            <img src={product?.image} alt='' />
         </>
     )
 }
