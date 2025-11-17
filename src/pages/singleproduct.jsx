@@ -8,15 +8,21 @@ import axios from "axios";
 export default function SingleProduct() {
     const { id } = useParams();
     const [product, setProduct] = useState({})
+    const navigate = useNavigate()
     function fetchData() {
-        const navigate = useNavigate()
+
         axios.get(`https://fakestoreapi.com/products/${id}`)
             .then(response => {
                 console.log(response)
                 setProduct(response.data)
 
             })
+            .catch(err => {
+                if (err.response?.status === 404) {
+                    navigate(-1)
+                }
 
+            })
 
     }
     useEffect(fetchData, [])
