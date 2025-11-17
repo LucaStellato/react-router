@@ -11,6 +11,7 @@ export default function singleProduct() {
                 console.log(response)
                 setProduct(response.data)
             })
+        useEffect(fetchData, [])
     }
     return (
         <>
