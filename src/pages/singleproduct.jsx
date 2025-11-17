@@ -17,6 +17,7 @@ export default function singleProduct() {
 
     }
     useEffect(fetchData, [])
+    const navigate = useNavigate();
     return (
         <>
             <div className="d-flex">
