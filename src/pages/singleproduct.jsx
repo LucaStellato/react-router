@@ -13,11 +13,16 @@ export default function singleProduct() {
             .then(response => {
                 console.log(response)
                 setProduct(response.data)
-            })
+
+            })catch (err => {
+
+        })
 
     }
     useEffect(fetchData, [])
     const navigate = useNavigate();
+
+
     return (
         <>
             <div className="d-flex">
